@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		 Online Library Management
+	</title>
+</head>
+<body style="background: orange">
+	<header style="color:Blue; font-family: black; font-size: large; text-align: center;">
+		<center><h1> Online Library Management</h1></center>
+
+	</header>
+	<script type="text/javascript">
+    function clicked() {
+       if (confirm('Do you want to submit?')) {
+           yourformelement.submit();
+       } else {
+           return false;
+       }
+    }
+
+</script>
+	<form  style="color: black;background-color: grey"id="form" method="get" autocomplete="on">
+		<label for="Full Name"> Full Name:</label>
+                
+		<input type="text" name="Full Name" placeholder="Full Name" required="">
+		<br>
+                <label for="oneline">mobile no(required field):</label>
+		<textarea name="oneline" maxlength="10" placeholder="(10 digits max)"></textarea>
+		<br>
+		<p>id proof:</p>
+		<br>
+		<label for="img">Select Image</label>
+		<input type="file" name="img" id="img" accept="image/*">	
+		<br>
+		<label for="address">address:</label>
+                <input type="text" name="address" placeholder="address" required="">
+		<br>	
+		<input type="image" src="https://www.freeiconspng.com/uploads/submit-button-png-25.png" width="48" height="48" name="final" onclick="clicked();">
+	</form>
+	<label for="final" form="form">Final Submission:(Alert Message):</label>
+	<br>
+	<button type="submit" form="form" formaction="https://www.wikipedia.org/" formmethod="get">Submit to another page</button>
+	<br>
+	<button type="reset" form="form" value="reset">Reset Form values</button>
+</body>
+<style>
+	form{
+		color:red;
+		background-color: rgb(255,255,0)
+	}
+</style>
+</html>
